@@ -1,0 +1,43 @@
+/* Define CSS Variables for Colors and Fonts */
+:root {
+  --color-primary: #1F1F1F;
+  --color-white: #FFFFFF;
+  --color-accent: #EB8D4A;
+  --color-contrast-grey: #F9F9F9;
+
+  --font-primary: var(--font-merriweather), serif; 
+  --font-secondary: var(--font-work-sans), sans-serif; 
+}
+
+body {
+  font-family: var(--font-secondary); 
+  color: var(--color-primary);    
+  background-color: var(--color-white); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);  
+  color: var(--color-primary);      
+  font-weight: 700;                 
+}
+
+/* Example usage of accent color for links */
+a {
+  color: var(--color-accent);
+  text-decoration: none; /* Remove default underline from links if desired */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover for links for example */
+}
+
+/* Basic reset/normalization (you can expand this if needed) */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box; /*  More predictable box model */
+}
