@@ -1,0 +1,231 @@
+.home-page {
+    font-family: var(--font-roboto) !important;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-identity {
+    width: 100%;
+    margin-bottom: 10vh;
+    height: 80px;
+    display: flex;
+}
+
+.home-identity img {
+    height: 20px;
+    width: auto;
+    margin: auto 30px auto;
+}
+
+.home-container {
+    display:flex;
+    max-width: 1100px;
+    width: 1000px;
+    height: 70%;
+    margin: auto;
+}
+
+.home-page h2 {
+    font-family: var(--font-roboto-condensed);
+    text-align: center;
+}
+
+.home-voucher-offer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+    border: 1px solid #ddd;
+    background-color: var(--color-contrast-grey);
+    width: 70%;
+    height: 100%;
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.home-voucher-image-section {
+    margin-bottom: 15px;
+}
+
+.home-voucher-content-section {
+    text-align: left;
+}
+
+.home-voucher-headline {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--font-primary);
+}
+
+.home-voucher-subheadline {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.home-voucher-details {
+    margin-bottom: 25px;
+}
+
+.home-voucher-details p {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.home-voucher-conditions-hint {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.home-voucher-call-to-action {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.home-voucher-fine-print {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.home-cta-button {
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; /* Add click pointer cursor on hover */
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for color, background, and border */
+}
+
+/* First Button Styling (White text, Orange background) */
+.home-cta-1 {
+    color: var(--color-contrast-grey);
+    background-color: black;
+}
+
+.home-cta-1:hover {
+    color: black; /* Inverse to Orange text */
+    background-color: var(--color-contrast-grey);    /* Inverse to White background */
+    border: 1px solid black;
+}
+
+.home-cta-1:active {
+    /* Optional: Add a subtle active/click effect, e.g., slightly darker background */
+    background-color: color-mix(in lch, black 80%, black); /* Slightly darker accent color on click */
+}
+
+/* Last Button Styling (Orange text, White background, Orange border) */
+.home-cta-2 {
+    color: black;
+    border: 1px solid black;
+    background-color: var(--color-contrast-grey); /* Explicitly set white background for clarity in transition */
+}
+
+.home-cta-2:hover {
+    color: var(--color-contrast-grey);               
+    background-color: black; /* Inverse to Orange background */
+    border: 1px solid black; /* Keep the border color consistent on hover */
+}
+
+.home-cta-2:active {
+    background-color: color-mix(in lch, black 80%, black);
+    border-color: color-mix(in lch, black 80%, black);
+}
+
+.home-image-slideshow-container {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: relative; 
+    width: 30%; 
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden; 
+    margin-bottom: 20px; 
+}
+
+.home-slideshow-image {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    filter: blur(0.5px);
+}
+
+
+/* --- Media Query for Mobile Devices (Screens up to 768px width) --- */
+@media (max-width: 850px) {
+    .home-page {
+        height: auto; /* Allow page height to expand based on content on mobile */
+        padding-bottom: 10vh;
+    }
+
+    .home-identity {
+        margin-bottom: 5vh; /* Reduce margin on mobile */
+    }
+
+    .home-container {
+        flex-direction: column; /* Stack slideshow and voucher offer vertically on mobile */
+        width: 90%; /* Take up 90% of screen width on mobile */
+        max-width: none; /* Remove max-width on mobile to allow 90% width to take effect */
+        height: auto; /* Allow container height to adjust to content on mobile */
+        border-radius: 20px; /* Slightly smaller border-radius on mobile */
+    }
+
+    .home-image-slideshow-container {
+        border-radius: 30px 30px 0px 0px;
+        width: 100%; /* Slideshow takes full width of container on mobile */
+        height: 300px; /* Adjust slideshow height for mobile - smaller than desktop */
+        min-height: auto; /* Remove min-height on mobile, height is now fixed */
+        margin-bottom: 0px; /* Reduce margin below slideshow on mobile */
+    }
+
+    .home-voucher-offer-container {
+        border-radius: 0px 0px 30px 30px;
+        width: 100%; /* Voucher offer takes full width of container on mobile */
+        padding: 30px; /* Reduce padding for voucher content on mobile */
+        height: auto; /* Allow voucher offer height to adjust to content on mobile */
+    }
+
+    .home-voucher-content-section {
+        text-align: center; /* Center text in voucher content on mobile if desired, or remove if left-align is preferred on mobile too */
+    }
+
+    .home-voucher-headline {
+        font-size: 1.6em; /* Slightly smaller headline on mobile */
+    }
+
+    .home-voucher-subheadline {
+        font-size: 1.1em; /* Slightly smaller sub-headline on mobile */
+        margin-bottom: 15px; /* Reduce margin on mobile */
+    }
+
+    .home-voucher-details {
+        margin-bottom: 20px; /* Reduce margin on mobile */
+    }
+
+    .home-voucher-call-to-action {
+        gap: 20px; /* Reduce gap between buttons on mobile */
+        flex-direction: row; /* Stack buttons vertically on mobile */
+    }
+
+    .home-cta-button {
+        width: 100%; /* Buttons take up more width on mobile */
+        max-width: 250px; /* But don't get too wide */
+        height: 50px; /* Slightly taller buttons on mobile */
+        font-size: 0.8em; /* Adjust font size if needed */
+        padding: 5px;
+    }
+
+    .home-voucher-conditions-hint,
+    .home-voucher-fine-print {
+        font-size: 0.85em; /* Slightly smaller fine print on mobile */
+    }
+}

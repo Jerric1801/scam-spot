@@ -13,6 +13,8 @@ body {
   font-family: var(--font-secondary); 
   color: var(--color-primary);    
   background-color: var(--color-white); 
+  max-width: 100vw;
+  width: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
