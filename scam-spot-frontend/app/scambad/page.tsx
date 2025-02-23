@@ -22,44 +22,6 @@ export default function ScamEducationPage() {
 
       <main>
         <ScamVisual />
-        {/* <section className={`${styles.section} ${styles.yellowSection}`}>
-          <h2 className={styles.sectionTitle}>
-            <svg
-              className={styles.icon}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-              <line x1="12" y1="9" x2="12" y2="13"></line>
-              <line x1="12" y1="17" x2="12.01" y2="17"></line>
-            </svg>
-            What Made This Ad Suspicious?
-          </h2>
-          <ul className={styles.redFlagList}>
-            <li className={styles.redFlagItem}>
-              <span className={styles.redFlagNumber}>1</span>
-              <p>
-                <strong>Red Flag 1:</strong> It was promising something too good to be true
-              </p>
-            </li>
-            <li className={styles.redFlagItem}>
-              <span className={styles.redFlagNumber}>2</span>
-              <p>
-                <strong>Red Flag 2:</strong> It contained poor grammar or spelling
-              </p>
-            </li>
-            <li className={styles.redFlagItem}>
-              <span className={styles.redFlagNumber}>3</span>
-              <p>
-                <strong>Red Flag 3:</strong> It created a false sense of urgency
-              </p>
-            </li>
-          </ul>
-        </section> */}
         <section className={styles.section} style={ { alignItems: 'center', justifyContent: 'center', textAlign: 'center' } }>
           <h2 className={styles.sectionTitle}>Learn More</h2>
           <p className={styles.sectionText}>Protect yourself by learning how to prevent being scammed.</p>
