@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scam Spot
+By Team Scammers (Jerric, Nathania, Kian Hong, Wen Xian)
 
-## Getting Started
+## 1. Overview
 
-First, run the development server:
+- Scam Spot is a community-driven platform that helps users protect themselves from online scams. It solves the problem of constantly evolving scam tactics by providing up-to-date education, a reporting system, and a supportive community, empowering users to recognize, avoid, and report fraudulent activity.  The target audience is anyone who uses the internet and is vulnerable to online scams, which is essentially everyone.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 2. Features
+Scam Spot offers a range of features designed to educate users, foster community engagement, and provide practical tools for scam prevention:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Scam Database/Directory:**
+    *   A searchable, user-maintained database of known scams.  Users can search by keywords.
+    *   Includes descriptions of each scam, including examples of communication (emails, texts, scripts), red flags, and known contact information used by scammers.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Scam Reporting System:**
+    *   A simple, intuitive form for users to report new scams they encounter.
+    *   Allows users to upload their suspected scam, and other supporting evidence.
+    *   Reports are reviewed by moderators (eventually) to ensure accuracy and prevent misuse.
+    *   Option for anonymous reporting to protect user privacy.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **Real-time Scam Alerts (Future Feature):**
+    *  Email alerts notifying users of newly reported and trending scams.
+    *   Customizable alert settings based on user preferences (e.g., by scam type, platform).
 
-## Learn More
+*   **Community Forum:**
+    *   A discussion forum where users can share their experiences, ask questions, and offer advice.
+    *   Moderated to ensure a supportive and respectful environment.
 
-To learn more about Next.js, take a look at the following resources:
+*   **Educational Resources:**
+    *   **Articles and Guides:**  In-depth articles on various scam types, prevention techniques, and recovery steps.
+    *   **Scam Simulations**  Interactive scenarios that allow users to safely experience simulated scams and learn how to respond appropriately.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Verification System (Future Feature):**
+    * A system using community voting to rate the likelihood/confirmed status of a reported scam. This builds trust in the data.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 3. Technologies Used
+- Frontend: Next.js, React, CSS
+- Database: Firebase
+- Deployment: Netlify
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 4. Access the application
+Go to this link: https://scamspot.netlify.app/
