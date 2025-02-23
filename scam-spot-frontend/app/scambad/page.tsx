@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import styles from "./page.module.css"
+import ScamVisual from "@/app/components/scam/ScamVisual"
 
 export default function ScamEducationPage() {
   const [linkCopied, setLinkCopied] = useState(false)
@@ -20,7 +21,8 @@ export default function ScamEducationPage() {
       </header>
 
       <main>
-        <section className={`${styles.section} ${styles.yellowSection}`}>
+        <ScamVisual />
+        {/* <section className={`${styles.section} ${styles.yellowSection}`}>
           <h2 className={styles.sectionTitle}>
             <svg
               className={styles.icon}
@@ -57,7 +59,7 @@ export default function ScamEducationPage() {
               </p>
             </li>
           </ul>
-        </section>
+        </section> */}
         <section className={styles.section} style={ { alignItems: 'center', justifyContent: 'center', textAlign: 'center' } }>
           <h2 className={styles.sectionTitle}>Learn More</h2>
           <p className={styles.sectionText}>Protect yourself by learning how to prevent being scammed.</p>

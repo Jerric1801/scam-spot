@@ -1,0 +1,111 @@
+/* --- Wrapper for the entire ScamVisual component --- */
+.scamVisualComponentWrapper {
+    display: flex;
+    flex-direction: column; /* Stack image and accordion vertically */
+    align-items: center;    /* Center align items horizontally */
+    width: 100%;
+    margin-bottom: 20px;   /* Example margin below the whole component */
+    margin-top: 50px;
+}
+
+
+/* --- Image and Circles Styles --- */
+.visualContainer {
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid red;  For visual container boundary during development */
+}
+
+.scamImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Set max-width as per your existing style */
+}
+
+
+/* --- Accordion Styles --- */
+.scam-accordion-container {
+    background-color: var(--color-contrast-grey);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.scam-accordion-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.scam-accordion-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.scam-accordion-item:last-child {
+    border-bottom: none;
+}
+
+.scam-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: var(--color-primary);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.scam-accordion-header:hover {
+    background-color: #f0f0f0;
+}
+
+.scam-number-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+.scam-accordion-icon {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.scam-accordion-content {
+    padding: 0 15px 10px 40px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.scam-accordion-content.expanded {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+    margin-bottom: 10px;
+}
+
+
+/* Existing styles from your original stylesheet - if you had any */
+.scam-visual { /* You can likely remove this now as .scamImage is used instead for image styling */
+    max-width: 1000px;
+    width: 800px; /* This width is now set on .scamImage and .scamVisualComponentWrapper can manage overall width */
+}
+
+.scam-visual img { /* Likely redundant now, .scamImage styles image */
+    width: 100%; /* .scamImage also styles image width */
+}

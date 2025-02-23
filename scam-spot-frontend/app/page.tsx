@@ -29,7 +29,7 @@ export default function HomePage() {
         const resetInactivityTimer = () => {
             clearTimeout(inactivityTimer);
             inactivityTimer = setTimeout(() => {
-                router.push('/success');
+                router.push('/scamgood');
             }, 60000);
         };
 
@@ -91,10 +91,10 @@ export default function HomePage() {
                             </p>
                         </div>
                         <div className="home-voucher-call-to-action">
-                            <Link href="/scam">
+                            <Link href="/scambad">
                                 <button className="home-cta-button home-cta-1">Redeem Now</button>
                             </Link>
-                            <Link href="/scam">
+                            <Link href="/scambad">
                                 <button className="home-cta-button home-cta-2">Next Time</button>
                             </Link>
                         </div>
