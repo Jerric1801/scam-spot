@@ -27,12 +27,12 @@ export default function Home() {
         </div>
         <ul style={{ listStyle: "none", display: "flex", margin: 0, padding: 0 }}>
           <li style={{ margin: "0 15px" }}>
-            <a href="/learm" style={{ textDecoration: "none", color: "#333" }}>
+            <a href="/learn" style={{ textDecoration: "none", color: "#333" }}>
               Education
             </a>
           </li>
           <li style={{ margin: "0 15px" }}>
-            <a href="/contact" style={{ textDecoration: "none", color: "#333" }}>
+            <a href="/community" style={{ textDecoration: "none", color: "#333" }}>
               Community
             </a>
           </li>

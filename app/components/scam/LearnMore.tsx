@@ -5,7 +5,7 @@ import Link from 'next/link';
 const LearnMore = () => {
     const handleCopyLink = () => {
         // In a real application, you would implement the logic to copy the link to the clipboard
-        alert('Link copied to clipboard (simulated)');
+        alert('Link copied to clipboard');
         setLinkCopied(true);
         setTimeout(() => {
             setLinkCopied(false);
@@ -21,7 +21,7 @@ const LearnMore = () => {
                     <div className=''>
                         <h2 className="scam-sectionTitle">Learn More</h2>
                         <p className="scam-sectionText">Protect yourself by learning how to prevent being scammed.</p>
-                        <Link href="/learn">
+                        <Link href="/register">
                             <button className="scam-learnMoreButton">
                                 Learn How to Prevent Scams
                                 <svg

@@ -1,0 +1,114 @@
+/* app/register/page.module.css */
+
+/* Define CSS Variables for theming */
+:root {
+    --register-bg-color-page: #f3f4f6; /* bg-gray-100 */
+    --register-bg-color-container: #ffffff; /* white */
+    --register-text-color-primary: #374151; /* text-gray-700 */
+    --register-text-color-label: #4b5563; /* text-gray-500 - slightly lighter for labels */
+    --register-font-semibold: 600; /* font-semibold */
+    --register-border-color: #d1d5db; /* border-gray-300 - for input borders */
+    --register-shadow-color: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); /* shadow-md */
+    --register-focus-outline: none; /* focus:outline-none */
+    --register-focus-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Example focus shadow - customize color */
+    --register-button-bg-color: #3b82f6; /* bg-blue-500 */
+    --register-button-hover-bg-color: #2563eb; /* hover:bg-blue-700 */
+    --register-button-text-color: #ffffff; /* white */
+    --register-button-font-bold: 700; /* font-bold */
+    --register-button-padding-y: 0.5rem; /* py-2 */
+    --register-button-padding-x: 1rem; /* px-4 */
+    --register-button-border-radius: 0.375rem; /* rounded-md */
+  }
+  
+  .registerPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: var(--register-bg-color-page);
+  }
+  
+  .registerFormContainer {
+    background-color: var(--register-bg-color-container);
+    padding: 2rem; /* p-8 */
+    border-radius: 0.375rem; /* rounded-md */
+    box-shadow: var(--register-shadow-color);
+    width: 24rem; /* w-96 - adjust as needed */
+  }
+  
+  .registerFormTitle {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: var(--register-font-semibold);
+    margin-bottom: 1rem; /* mb-4 */
+    text-align: center;
+    color: var(--register-text-color-primary);
+  }
+  
+  .registerForm {
+    display: flex;
+    flex-direction: column; /* space-y-4 in Tailwind is achieved by vertical flex and margin-bottom on children, or space-between in flexbox */
+    gap: 1rem; /* space-y-4 - Using gap for more modern flexbox spacing */
+  }
+  
+  .registerFormField {
+    /* space-y-4 > div (implicit styling for form field groups) -  already handled by .registerForm gap */
+  }
+  
+  .registerLabel {
+    display: block; /* block text */
+    color: var(--register-text-color-label);
+    font-size: 0.875rem; /* text-sm */
+    font-weight: var(--register-font-semibold);
+    margin-bottom: 0.5rem; /* mb-2 */
+  }
+  
+  .registerInput {
+    appearance: none; /* appearance-none - reset browser styling */
+    border-width: 1px; /* border */
+    border-color: var(--register-border-color);
+    border-radius: 0.375rem; /* rounded-md */
+    width: 100%; /* w-full */
+    padding: 0.5rem 0.75rem; /* py-2 px-3 */
+    color: var(--register-text-color-primary);
+    line-height: inherit; /* leading-tight */
+    outline: var(--register-focus-outline);
+    box-shadow: var(--register-shadow-color); /* shadow-md */
+  }
+  
+  .registerInput:focus {
+    outline: var(--register-focus-outline); /* focus:outline-none - explicitly set outline to none again for focus */
+    box-shadow: var(--register-focus-shadow); /* Example focus shadow */
+    border-color: #60a5fa; /* focus:border-blue-500 - example focus border color, adjust as needed */
+  }
+  
+  
+  .registerButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* flex items-center justify-between */
+    /* No specific styles needed beyond what's on the button itself */
+  }
+  
+  .registerButton {
+    background-color: var(--color-accent);
+    color: var(--register-button-text-color);
+    font-weight: var(--register-button-font-bold);
+    padding-top: var(--register-button-padding-y);
+    padding-bottom: var(--register-button-padding-y);
+    padding-left: var(--register-button-padding-x);
+    padding-right: var(--register-button-padding-x);
+    border-radius: var(--register-button-border-radius);
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+    border: none; /* Remove default button border */
+    outline: none; /* Remove default button outline on focus */
+  }
+  
+  .registerButton:hover {
+    background-color: var(--color-accent);
+  }
+  
+  .registerButton:focus {
+    outline: var(--register-focus-outline); /* focus:outline-none - explicitly set outline to none again for focus */
+    box-shadow: var(--register-focus-shadow); /* Example focus shadow */
+  }
