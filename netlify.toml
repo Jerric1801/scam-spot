@@ -1,0 +1,9 @@
+[build]
+  base = "scam-spot-frontend"
+  command = "npm run build"
+  publish = ".next"
+
+[dev]
+  framework = "#auto"
+  command = "npm run dev"
+  port = 3000
