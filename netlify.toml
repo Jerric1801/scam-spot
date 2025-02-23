@@ -1,7 +1,7 @@
 [build]
   base = "scam-spot-frontend"
   command = "npm run build"
-  publish = ".next"
+  publish = ".next/server/app"
 
 [dev]
   framework = "#auto"
